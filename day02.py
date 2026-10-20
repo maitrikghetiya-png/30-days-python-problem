@@ -117,7 +117,7 @@ else:
 
 
 
-Question 3
+# Question 3
 
 # Triangle Classification Puzzle
 
@@ -155,3 +155,41 @@ if s1>0 and s2>0 and s3>0:
         print("side is not corret")        
 else:
     print("negative side invaid") 
+
+
+# # Employee Bonus and Promotion
+
+# # Determine an employee's bonus and promotion eligibility.
+
+# # Rules:
+
+# # Experience ≥ 10 years and rating ≥ 4.5: 25% bonus and promotion.
+
+# # Experience ≥ 10 years and rating ≥ 3.5: 15% bonus, no promotion.
+
+# # Experience ≥ 5 years and rating ≥ 4.0: 12% bonus.
+
+# # Experience below 5 years and rating ≥ 4.5: 8% bonus.
+
+# # All other cases: no bonus.
+
+# # oal
+
+# # Tricky condition: An employee has 12 years of experience but a rating of 3.2.
+
+# # Task: Accept salary, experience, and rating; calculate the bonus amount and promotion status. Validate all inputs.
+
+
+exp=int(input("enter your experince in year:-"))
+rating=float(input("enter rate (out of ten)"))
+
+if exp>=10 and rating>=4.5:
+    print("25% Bonus and promation")
+elif exp>=10 and rating>=3.5:
+    print("15% Bonus and no promation")
+elif exp>=5 and rating>=4.0:
+    print("12% Bonus")
+elif exp<5 and rating>=4.5:
+    print("8% Bonus")
+else:
+    print("no bonus")
