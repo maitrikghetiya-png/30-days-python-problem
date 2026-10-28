@@ -21,8 +21,8 @@ else:
 # Otherwise, print the appropriate reason for rejection.
 # Restriction: Use only if statements and logical operators. Do not use elif or else.
 
-amount = int(input("enter your amount: "))
-balance = int(input("enter the balance: "))
+amount = float(input("enter your amount: "))
+balance = float(input("enter the balance: "))
 
 if amount <= 0:
     print("Withdrawal amount must be positive")
@@ -45,10 +45,10 @@ if amount > 0 and amount % 100 == 0 and amount <= balance:
 # If the salary is greater than ₹1,000,000, print "High Salary Band".
 # Restriction: Use independent if statements with appropriate logical operators. Multiple messages may appear.
 
-salary=int(input("enter your salary:-"))
+salary=float(input("enter your salary:-"))
 experience=float("enter your experience:-")
-rating=int(input("(out of ten)rating:-"))
-att_per=int("attendance percentage:-")
+rating=float(input("(out of ten)rating:-"))
+att_per=float("attendance percentage:-")
 if rating>=9:
     print("High Performer")
 if experience>=3 and rating>=8 and att_per>=90:
